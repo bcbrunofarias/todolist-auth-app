@@ -1,0 +1,19 @@
+<div>
+    <h2>Details</h2>
+
+    <form [formGroup]="updateTodoForm" (ngSubmit)="onSubmit()">
+        <label for="title">Title
+            <input type="text" name="title" id="todo.title" formControlName="title">
+        </label>
+
+        <label for="description">Description
+            <input type="text" name="description" id="todo.description" formControlName="description">
+        </label>
+
+        <button type="submit">Atualizar</button>
+    </form>
+
+    @if (feedbackMessage()) {
+    <p @fadeInOut>Tarefa atualizada com sucesso!</p>
+    }
+</div>

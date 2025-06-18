@@ -1,0 +1,33 @@
+<div>
+  <h1>List</h1>
+
+  <div>
+    <form [formGroup]="createTodoForm" (ngSubmit)="onCreateTodoForm()">
+      <label for="title">Title
+        <input type="text" name="title" id="login.title" formControlName="title">
+      </label>
+
+      <label for="description">Description
+        <input type="text" name="description" id="login.description" formControlName="description">
+      </label>
+
+      <button type="submit">Create</button>
+    </form>
+  </div>
+
+  @if (todoPermissions().canDeleteAllTodo) {
+  <button (click)="onDeleteAllTodosClick()">Remover todos</button>
+  }
+
+  @for (todo of todos(); track $index) {
+  <div @fadeInOut>
+    <h3>{{ todo.title }}</h3>
+    <p>{{ todo.description }}</p>
+
+    <button (click)="onTodoDetailsClick(todo.id)">Ver</button>
+    @if (todoPermissions().canDeleteTodo) {
+    <button (click)="onDeleteTodoClick(todo.id)">Remover</button>
+    }
+  </div>
+  }
+</div>

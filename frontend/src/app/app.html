@@ -1,0 +1,14 @@
+<h1>APP</h1>
+
+<a routerLink="/home">Home</a> / 
+
+@if (isAuthenticated$()) {
+  <a routerLink="/todos">Todos</a> /
+  <button (click)="onLogoutClick()">Logout</button>
+} @else {  
+  <a routerLink="/login">Login</a>
+}
+
+<main>
+  <router-outlet></router-outlet>
+</main>

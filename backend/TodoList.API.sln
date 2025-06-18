@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{452F584E-F32E-4B07-AAE2-C55452BB2F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{2E68F2AF-F995-4E22-833D-203A6AAC27C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoList.API.Web", "src\TodoList.API.Web\TodoList.API.Web.csproj", "{86301256-D144-409D-BED5-D33559691B0C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86301256-D144-409D-BED5-D33559691B0C} = {452F584E-F32E-4B07-AAE2-C55452BB2F69}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86301256-D144-409D-BED5-D33559691B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86301256-D144-409D-BED5-D33559691B0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86301256-D144-409D-BED5-D33559691B0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86301256-D144-409D-BED5-D33559691B0C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

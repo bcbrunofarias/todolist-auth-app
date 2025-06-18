@@ -1,0 +1,99 @@
+# =========================
+# .NET (C#) - Back-end
+# =========================
+**/bin/
+**/obj/
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+**/*.ncb
+**/*.cache
+**/*.pdb
+**/*.dbmdl
+**/*.log
+**/*.bak
+*.vspscc
+*.vssscc
+*.tmp
+.vs/
+_ReSharper*/
+*.resharper
+.idea/
+*.sln.iml
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Entity Framework
+**/Migrations/*Designer.cs
+**/Migrations/*Snapshot.cs
+
+# Dotnet CLI
+*.dotnet-tools.json
+*.dotnet-metadata
+
+# ASP.NET Data Protection
+**/DataProtection-Keys/
+
+# Local secrets
+**/secrets.json
+
+# User-specific files
+*.sln.cache
+*.userprefs
+
+# Rider IDE
+.idea/
+*.sln.iml
+
+# Logs
+logs/
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# =========================
+# Angular - Front-end
+# =========================
+**/node_modules/
+**/dist/
+**/.angular/
+**/.output/
+**/.turbo/
+**/.env
+**/coverage/
+**/build/
+**/out-tsc/
+**/.eslintcache
+**/npm-debug.log*
+**/yarn-error.log
+**/package-lock.json
+
+# Angular cache
+.angular/cache/
+.angular/config.json
+
+# IDEs
+.vscode/
+*.code-workspace
+
+# =========================
+# Docker (opcional)
+# =========================
+**/.env
+**/.dockerignore
+docker-compose.override.yml
+**/Dockerfile.dev
+**/.DS_Store
+
+# =========================
+# Others
+# =========================
+*.bak
+*.tmp
+*.swp
+*.swo
+*.swn
